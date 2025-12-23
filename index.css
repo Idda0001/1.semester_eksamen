@@ -1,0 +1,141 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/************************************/
+.om_pic {
+  display: none;
+}
+
+.cover {
+  padding-bottom: 5rem;
+}
+.skilte1 img,
+.skilte2 img {
+  padding: 1.5rem;
+}
+.index h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.om_tekst h2 {
+  margin-top: 7rem;
+}
+.intro_tekst h2 {
+  margin-bottom: 5rem;
+}
+.index .om_tekst p {
+  margin-bottom: 4rem;
+}
+
+.om_udsnit a {
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--button-background);
+  border: solid 7px var(--button-border);
+  border-radius: 9999px;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-blue);
+  box-shadow: -1px 3px 1px rgba(20, 24, 34, 0.3);
+  max-width: 1rem;
+}
+.om_udsnit a:hover {
+  background-color: var(--button-hover-background);
+  transition: 0.05s linear;
+}
+.om_udsnit a:active {
+  background-color: var(--button-active-background);
+  color: var(--button-active-text);
+}
+.read_more:focus-visible {
+  background-color: var(--button-hover-background);
+  outline: none;
+}
+
+/*********** Skilte Hover og Active ***********/
+.skilt1_1:hover,
+a:focus .skilt1_1,
+a:focus-visible .skilt1_1 {
+  content: url(svg_hover/skilt_tema2_hover.svg);
+}
+.skilt1_1:active {
+  content: url(svg_hover/skilt_tema2_active.svg);
+}
+.skilt1_2:hover,
+a:focus .skilt1_2,
+a:focus-visible .skilt1_2 {
+  content: url(svg_hover/skilt_tema3_hover.svg);
+}
+.skilt1_2:active {
+  content: url(svg_hover/skilt_tema3_active.svg);
+}
+.skilt2_1:hover,
+a:focus .skilt2_1,
+a:focus-visible .skilt2_1 {
+  content: url(svg_hover/skilt_tema4_hover.svg);
+}
+.skilt2_1:active {
+  content: url(svg_hover/skilt_tema4_active.svg);
+}
+.skilt2_2:hover,
+a:focus .skilt2_2,
+a:focus-visible .skilt2_2 {
+  content: url(svg_hover/skilt_tema5_hover.svg);
+}
+.skilt2_2:active {
+  content: url(svg_hover/skilt_tema5_active.svg);
+}
+
+@media (min-width: 800px) {
+  .om_pic {
+    display: block;
+  }
+
+  .skilte_all {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 10rem;
+  }
+  .skilte1 {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+  }
+  .skilte2 {
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+  }
+  .skilte1_1,
+  .skilte2_1 {
+    grid-column: 1;
+  }
+  .skilte1_2,
+  .skilte2_2 {
+    grid-column: 2;
+  }
+  .om_udsnit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .om_tekst {
+    grid-column: 1;
+    align-content: center;
+  }
+  .om_pic {
+    grid-column: 2;
+    width: 30rem;
+    justify-self: right;
+    align-self: center;
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- JS -->
+    <script src="menu.js" defer></script>
+
+    <!-- Preload svg -->
+    <link rel="preload" as="image" href="svg/Portfolio_svg_cover.svg" />
+
+    <!-- Prefetch hover -->
+    <link rel="prefetch" as="image" href="svg/Logo_isd-cropped.svg" />
+    <link rel="prefetch" as="image" href="svg_hover/Logo_isd_hover.svg" />
+    <link rel="prefetch" as="image" href="svg_hover/skilt_tema2_hover.svg" />
+    <link rel="prefetch" as="image" href="svg_hover/skilt_tema3_hover.svg" />
+    <link rel="prefetch" as="image" href="svg_hover/skilt_tema4_hover.svg" />
+    <link rel="prefetch" as="image" href="svg_hover/skilt_tema5_hover.svg" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="index">
+    <header>
+      <div class="logo_wrapper">
+        <a href="index.html" class="active"
+          ><img
+            id="logo"
+            class="logo"
+            src="svg/Logo_isd-cropped.svg"
+            alt="Bogstaverne I S D"
+            width="90"
+            height="45"
+        /></a>
+      </div>
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a class="active" href="index.html">Forside</a></li>
+          <li><a href="tema2.html">Grundlæggende Web</a></li>
+          <li><a href="tema3.html">Grundlæggende UX/UI</a></li>
+          <li><a href="tema4.html">Brugergrænsefladeudvikling</a></li>
+          <li><a href="tema5.html">Grundlæggende Indhold</a></li>
+          <li><a href="om.html">Om mig</a></li>
+        </ul>
+        <button
+          class="burger"
+          aria-label="Åbn menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+    <main id="index_main">
+      <img
+        fetchpriority="high"
+        class="cover"
+        src="svg/Portfolio_svg_cover.svg"
+        alt="Forside til portfolio"
+        width="1200"
+        height="600"
+      />
+      <div class="intro_tekst">
+        <h1>Fra frø til forståelse</h1>
+        <h2>Mit arbejde og min læring fra 1. semester – samlet ét sted</h2>
+      </div>
+      <section class="skilte_all">
+        <div class="skilte1">
+          <a href="tema2.html"
+            ><img
+              class="skilt1_1"
+              src="svg/skilt_tema2-cropped.svg"
+              alt="Tema 2, Grundlæggende Web"
+              width="600"
+              height="300"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="tema3.html"
+            ><img
+              class="skilt1_2"
+              src="svg/skilt_tema3-cropped.svg"
+              alt="Tema 3, Grundlæggende UX/UI"
+              width="600"
+              height="300"
+              loading="lazy"
+              decoding="async"
+          /></a>
+        </div>
+        <div class="skilte2">
+          <a href="tema4.html"
+            ><img
+              class="skilt2_1"
+              src="svg/skilt_tema4-cropped.svg"
+              alt="Tema 4, Brugergrænsefladeudvikling"
+              width="600"
+              height="300"
+              loading="lazy"
+              decoding="async"
+          /></a>
+          <a href="tema5.html"
+            ><img
+              class="skilt2_2"
+              src="svg/skilt_tema5-cropped.svg"
+              alt="Tema 5, Grundlæggende indhold"
+              width="600"
+              height="300"
+              loading="lazy"
+              decoding="async"
+          /></a>
+        </div>
+      </section>
+      <div class="om_udsnit">
+        <div class="om_tekst">
+          <h2>Bag Portflioen</h2>
+          <p>
+            Jeg er studerende på multimediedesign uddannelsen, på Københavns
+            erhvervs Akademi. Jeg nyder at blande det kreative og det digitale,
+            for at omsætte idéer til konkrete løsninger.
+          </p>
+          <a class="read_more" href="om.html">Læs mere om mig</a>
+        </div>
+        <div>
+          <img
+            class="om_pic"
+            src="imgs/placeholder-1024x1024.webp"
+            alt="placeholder"
+            width="400"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+        distinctio provident ratione ipsa vitae cumque, ab adipisci facere atque
+        sed consectetur quod, aliquid, voluptas nostrum. Quibusdam fuga
+        consectetur temporibus soluta.
+      </p>
+    </footer>
+  </body>
+</html>

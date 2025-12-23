@@ -1,0 +1,39 @@
+:root {
+  /*colors*/
+  --background-1: #fdfdff;
+  --background-2: #e8efff;
+  --light-blue: #c8daff;
+  --blue: #879ece;
+  --dark-blue: #252d40;
+  --light-green: #83ad82;
+  --green: #567855;
+  --dark-green: #40543f;
+  --green-black: #101610;
+  --blue-black: #141822;
+  --button-background: #e5e1df;
+  --button-border: #805e45;
+  --button-hover-background: #977d6b;
+  --button-active-background: #805e45;
+  --button-active-text: #fdfdff;
+
+  /*fonts*/
+  --h1-font: "Rubik Mono One", monospace;
+  --h2-font: "Rubik", sans-serif;
+  --text-font: "Rubik", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* H1 */
+  --h1-size: 3rem;
+  --h1-size-mobile: 1rem;
+
+  /* H2 */
+  --h2-size: 2rem;
+  --h2-size-mobile: 1.2rem;
+
+  /* P */
+  --text-size: 1.3rem;
+  --text-line-height: 2rem;
+  --text-size-mobile: 1rem;
+}
