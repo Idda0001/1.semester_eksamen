@@ -95,6 +95,7 @@ nav.active .menu a {
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,13 +181,74 @@ header {
 /***********footer***********/
 footer {
   bottom: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   padding: 0.25rem;
   background-color: var(--background-2);
   box-shadow: 0 -1px 10px rgba(20, 24, 34, 0.3);
   margin-top: 10rem;
+}
+
+.contact1 img,
+.contact2 img {
+  height: auto;
+  width: 6rem;
+  padding: 1.5rem;
+  padding-right: 20px;
+  margin: 0;
+}
+.contact1 {
+  display: flex;
+  flex-direction: row;
+  grid-column: 1;
+  align-self: center;
+  align-items: center;
+}
+
+.contact2 {
+  display: flex;
+  flex-direction: row;
+  grid-column: 3;
+  align-self: center;
+  justify-self: end;
+  align-items: center;
+}
+
+.footer_logo {
+  grid-column: 2;
+  height: auto;
+  width: 7rem;
+  padding: 1.5rem;
+  padding-right: 20px;
+  margin: 0;
+  justify-self: center;
+}
+@media (min-width: 800px) {
+  .contact1 img,
+  .contact2 img {
+    height: auto;
+    width: 7rem;
+    padding: 1.5rem;
+    padding-right: 20px;
+    margin: 0;
+  }
+  .footer_logo {
+    grid-column: 2;
+    height: auto;
+    width: 11rem;
+    padding: 1.5rem;
+    padding-right: 20px;
+    margin: 0;
+    justify-self: center;
+  }
+  .contact1 h3 {
+    display: contents;
+  }
+  .contact2 h3 {
+    display: contents;
+  }
 }
 
 /***********General styling***********/
@@ -203,6 +265,12 @@ h1 {
 h2 {
   font-family: var(--h2-font);
   font-size: var(--h2-size-mobile);
+  color: var(--dark-blue);
+  font-weight: var(--font-weight-bold);
+}
+h3 {
+  font-family: var(--h2-font);
+  font-size: var(--h3-size-mobile);
   color: var(--dark-blue);
   font-weight: var(--font-weight-bold);
 }
@@ -225,7 +293,7 @@ a:focus-visible {
 }
 @media (min-width: 800px) {
   main {
-    margin: 1.5rem 10rem 1.5rem 10rem;
+    margin: 1.5rem 15rem 1.5rem 15rem;
   }
   h1 {
     font-family: var(--h1-font);
@@ -235,6 +303,12 @@ a:focus-visible {
   h2 {
     font-family: var(--h2-font);
     font-size: var(--h2-size);
+    color: var(--dark-blue);
+    font-weight: var(--font-weight-bold);
+  }
+  h3 {
+    font-family: var(--h2-font);
+    font-size: var(--h3-size);
     color: var(--dark-blue);
     font-weight: var(--font-weight-bold);
   }
