@@ -24,21 +24,28 @@
   --font-weight-bold: 700;
 
   /* H1 */
-  --h1-size: 3rem;
-  --h1-size-mobile: 1rem;
+  --h1-size: clamp(2rem, 2.5vw, 10rem);
+  --h1-size-mobile: 1.5rem;
 
   /* H2 */
-  --h2-size: 2rem;
-  --h2-size-mobile: 1.2rem;
+  --h2-size: clamp(1.7rem, 2vw, 8rem);
+  --h2-size-mobile: 1.6rem;
+
+  --nav-size-mobile: 0.9rem;
+  --nav-size: clamp(1.2rem, 1.5vw, 3rem);
+  --nav-gap: clamp(1rem, 1.5vw, 5rem);
 
   /*H3*/
-  --h3-size: 1.5rem;
-  --h3-size-mobile: 0.7rem;
+  --h3-size: clamp(1rem, 1.8vw, 5rem);
+  --h3-size-mobile: 0.8rem;
 
   /* P */
-  --text-size: 1.3rem;
-  --text-line-height: 2rem;
-  --text-size-mobile: 1rem;
+  --text-size: clamp(1rem, 1.5vw, 3rem);
+  --text-line-height: clamp(2rem, 1.5vw, 3rem);
+  --text-size-mobile: 1.4rem;
+
+  --button-padding: clamp(1rem, 1vw, 3rem);
+  --img-width: 75%;
 }
 /*animation*/
 @keyframes swing {

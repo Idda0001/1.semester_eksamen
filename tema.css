@@ -1,0 +1,118 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*****************generel styling*******************/
+
+.tema_main h1 {
+  padding: 3rem 0 0 0;
+}
+.tema_main h2 {
+  padding: 6rem 0 1rem 0;
+}
+.tema_main a {
+  font-weight: var(--font-weight-bold);
+  color: var(--blue);
+  text-decoration: underline;
+}
+.tema2 p,
+.tema3 p {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .tema2,
+  .tema3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 0;
+  }
+  .tema3 {
+    padding-top: 10rem;
+  }
+  .tema2tekst {
+    grid-column: 1;
+  }
+  .tema2slide {
+    grid-column: 2;
+  }
+
+  .tema3tekst {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .tema3slide {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tema2slide,
+  .tema3slide {
+    justify-self: center;
+  }
+  .tema1tekst {
+    height: 50vh;
+  }
+}
+.tema2slide img,
+.tema3slide img {
+  padding: 2.5rem;
+}
+/*****************slide show*******************/
+.slideshow [data-slide] {
+  display: none;
+}
+
+.slideshow [data-slide].is-active {
+  display: block;
+}
+.slideshow {
+  position: relative;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.slideshow .slide img {
+  width: var(--img-width);
+  display: block;
+  background-image: url(svg/træ_baggrund.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px var(--button-background);
+  border-radius: 20px;
+}
+
+.slideshow button[data-prev],
+.slideshow button[data-next] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  background-color: transparent;
+  border: none;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-blue);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.slideshow button[data-prev] {
+  left: -9px;
+}
+
+.slideshow button[data-next] {
+  right: -9px;
+}

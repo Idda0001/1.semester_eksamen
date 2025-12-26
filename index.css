@@ -16,7 +16,7 @@ img {
 }
 
 .cover {
-  padding-bottom: 10rem;
+  padding: 0 10rem 10rem 10rem;
 }
 .skilte1 img,
 .skilte2 img {
@@ -38,8 +38,11 @@ img {
 
 .om_udsnit a {
   display: inline-flex;
-  padding: 1rem 2rem 1rem 2rem;
-  background-color: var(--button-background);
+  padding: var(--button-padding);
+  background-image: url(svg/træ_baggrund.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: solid 7px var(--button-background);
   border-radius: 9999px;
   font-weight: var(--font-weight-bold);
@@ -53,72 +56,45 @@ img {
   transition: 0.05s linear;
   animation: swing 1s;
 }
-/* .om_udsnit a:active {
-  background-color: var(--button-active-background);
-  color: var(--button-active-text);
-} */
+
 .read_more:focus-visible {
   background-color: var(--button-hover-background);
   outline: none;
 }
-
-/*********** Skilte Hover og Active ***********/
-.skilt1_1:hover,
-a:focus .skilt1_1,
-a:focus-visible .skilt1_1 {
-  animation: swing 1s;
-}
-/* .skilt1_1:active {
-  content: url(svg_hover/skilt_tema2_active.svg);
-} */
-.skilt1_2:hover,
-a:focus .skilt1_2,
-a:focus-visible .skilt1_2 {
-  animation: swing 1s;
-}
-/* .skilt1_2:active {
-  content: url(svg_hover/skilt_tema3_active.svg);
-} */
-.skilt2_1:hover,
-a:focus .skilt2_1,
-a:focus-visible .skilt2_1 {
-  animation: swing 1s;
-}
-/* .skilt2_1:active {
-  content: url(svg_hover/skilt_tema4_active.svg);
-} */
-.skilt2_2:hover,
-a:focus .skilt2_2,
-a:focus-visible .skilt2_2 {
-  animation: swing 1s;
-}
-/* .skilt2_2:active {
-  content: url(svg_hover/skilt_tema5_active.svg);
-} */
-
 @media (min-width: 800px) {
   .om_pic {
     display: block;
+    grid-column: 2;
+    width: var(--img-width);
+    justify-self: right;
+    align-self: center;
+    border-radius: 15px;
+    background-image: url(svg/træ_baggrund.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .ombilled {
+    padding: 2rem;
   }
 
   .skilte_all {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 4rem;
-    padding-bottom: 10rem;
+    gap: 2rem;
   }
   .skilte1 {
     display: grid;
     grid-row: 1;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    gap: 5rem;
     padding: 0;
   }
   .skilte2 {
     display: grid;
     grid-row: 2;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    gap: 5rem;
     padding: 0;
   }
   .skilte1_1,
@@ -133,17 +109,36 @@ a:focus-visible .skilt2_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 5rem;
+    gap: 2rem;
   }
   .om_tekst {
     grid-column: 1;
     align-content: center;
     align-self: center;
   }
-  .om_pic {
-    grid-column: 2;
-    width: 30rem;
-    justify-self: right;
-    align-self: center;
-    border-radius: 15px;
-  }
+}
+
+/*********** Skilte Hover og Active ***********/
+.skilt1_1:hover,
+a:focus .skilt1_1,
+a:focus-visible .skilt1_1 {
+  animation: swing 1s;
+}
+
+.skilt1_2:hover,
+a:focus .skilt1_2,
+a:focus-visible .skilt1_2 {
+  animation: swing 1s;
+}
+
+.skilt2_1:hover,
+a:focus .skilt2_1,
+a:focus-visible .skilt2_1 {
+  animation: swing 1s;
+}
+
+.skilt2_2:hover,
+a:focus .skilt2_2,
+a:focus-visible .skilt2_2 {
+  animation: swing 1s;
 }
