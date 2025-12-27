@@ -1,15 +1,3 @@
-/*************** Reset *********************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 /************************************/
 .om_pic {
   display: none;
@@ -29,7 +17,7 @@ img {
 .om_tekst h2 {
   margin-top: 7rem;
 }
-.intro_tekst h2 {
+h2.intro_tekst {
   margin-bottom: 5rem;
 }
 .index .om_tekst p {
