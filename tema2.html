@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="tema.css" />
 
+    <!-- Preload svg -->
+    <link rel="preload" as="image" href="svg/titelplante.svg" />
+
+    <link rel="prefetch" as="image" href="svg/hylde.svg" />
+    <link rel="prefetch" as="image" href="svg/billedramme.svg" />
+    <link rel="prefetch" as="image" href="imgs/placeholder-1024x1024.webp" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,21 +75,32 @@
     </header>
 
     <main class="tema_main">
-      <h1 class="tema">Grundlæggende Web</h1>
-      <div class="tema1">
-        <div class="tema1tekst">
-          <h2>Hvad jeg har lært under temaet</h2>
-          <p>
-            I Tema 02, grundlæggende Web, har jeg lært de basale ting indenfor
-            web-desgin og -udvikling. Jeg har arbejdet med HTML og CSS, og her
-            lært hvordan man opbygger et website med god struktur.
-          </p>
-          <p>
-            Jeg har også fået en forståelse for responsivt design. Temaet har
-            givet mig et godt grundlag for at arbejde videre med web og digitale
-            løsninger. Derudover er jeg blevet introduceret for forskellige
-            filformater til web, herunder PNG, JPG, SVG og WebP.
-          </p>
+      <div class="overfold">
+        <div class="titelsvg">
+          <h1>Grundlæggende Web</h1>
+          <img
+            class="titelplante"
+            src="svg/titelplante.svg"
+            alt="Plante i blå potte"
+            fetchpriority="high"
+            loading="eager"
+          />
+        </div>
+        <div class="tema1">
+          <div class="tema1tekst">
+            <h2>Hvad jeg har lært under temaet</h2>
+            <p>
+              I Tema 02, grundlæggende Web, har jeg lært de basale ting indenfor
+              web-desgin og -udvikling. Jeg har arbejdet med HTML og CSS, og her
+              lært hvordan man opbygger et website med god struktur.
+            </p>
+            <p>
+              Jeg har også fået en forståelse for responsivt design. Temaet har
+              givet mig et godt grundlag for at arbejde videre med web og
+              digitale løsninger. Derudover er jeg blevet introduceret for
+              forskellige filformater til web, herunder PNG, JPG, SVG og WebP.
+            </p>
+          </div>
         </div>
       </div>
       <div class="tema2">
@@ -99,26 +117,32 @@
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <button type="button" data-prev>❮</button>
             <button type="button" data-next>❯</button>
           </div>
+          <img
+            src="svg/hylde.svg"
+            alt="Hylde"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
       <div class="tema3">
@@ -149,26 +173,32 @@
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <button type="button" data-prev>❮</button>
             <button type="button" data-next>❯</button>
           </div>
+          <img
+            src="svg/hylde.svg"
+            alt="hylde"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
       </div>
     </main>

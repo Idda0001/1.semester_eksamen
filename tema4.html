@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="tema.css" />
 
+    <!-- Preload svg -->
+    <link rel="preload" as="image" href="svg/titelplante3.svg" />
+
+    <link rel="prefetch" as="image" href="svg/hylde.svg" />
+    <link rel="prefetch" as="image" href="svg/billedramme.svg" />
+    <link rel="prefetch" as="image" href="imgs/placeholder-1024x1024.webp" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +75,159 @@
         </button>
       </nav>
     </header>
-    <main></main>
+
+    <main class="tema_main">
+      <div class="overfold">
+        <div class="titelsvg">
+          <h1>Brugergrænse&shy;flade&shy;udvikling</h1>
+          <img
+            src="svg/titelplante3.svg"
+            alt="Plante i blå potte"
+            fetchpriority="high"
+            loading="eager"
+          />
+        </div>
+        <div class="tema1">
+          <div class="tema1tekst">
+            <h2>Hvad jeg har lært under temaet</h2>
+            <p>
+              I Tema 04 har jeg lært at udvikle brugergrænseflader. Jeg er har
+              fået en forståelse for hvordan HTML, CSS og JavaScript spiller
+              sammen, og hvordan jeg kan bruge dem til at lave fede funktioner
+              på mit website.
+            </p>
+            <p>
+              Deruover har jeg arbejdet med Adobe Illustrator, hvor jeg har lært
+              at designe mine egne grafikker og ikoner i SVG-formatet. Temaet
+              har hjulpet mig i at øve både design og kode, og jeg har fået en
+              bedre fornemmelse for hvordan mine idéer kan blive lavet til et
+              færdigt og fungerende produkt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tema2">
+        <div class="tema2tekst">
+          <h2>Min arbejdsproces</h2>
+          <p>
+            I dette tema skulle jeg udvikle et emergency site med udgangspunkt i
+            et selvvalgt emne.
+          </p>
+          <p>
+            Jeg startede processen med at lave en papirprototype, som hjalp mig
+            med at visualisere, hvilke funktioner og informationer jeg gerne
+            ville have med i min infografik. Det gav mig et godt overblik, inden
+            jeg gik videre til det digitale arbejde.
+          </p>
+          <p>
+            Selve infografikken blev udarbejdet i Adobe Illustrator som
+            vektorgrafik, så den kunne bruges direkte på hjemmesiden og skaleres
+            uden at miste kvalitet.
+          </p>
+          <p>
+            Kodedelen af opgaven var hovedsageligt fokuseret på CSS og
+            JavaScript, hvor jeg arbejdede med styling, layout og interaktive
+            elementer. Gennem opgaven har jeg fået en bedre forståelse for,
+            hvordan design og kode spiller sammen.
+          </p>
+          <p>
+            Jeg fokuserede også meget på at udarbejde både en light og dark
+            version af siden, som ved hjælp af JavaScript og en Toggle knap,
+            blev funktionelt. I denne opgave blev Custom Properties også
+            introduceret.
+          </p>
+        </div>
+        <div class="tema2slide">
+          <div class="slideshow" data-slideshow>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <button type="button" data-prev>❮</button>
+            <button type="button" data-next>❯</button>
+          </div>
+          <img
+            src="svg/hylde.svg"
+            alt="Hylde"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <div class="tema3">
+        <div class="tema3tekst">
+          <h2>Det endelige resultat</h2>
+          <p>
+            Min løsning endte med at mangle noget indhold, da jeg røg en smule
+            bagud med undervisningen. Dog fokuserede jeg så godt som muligt på
+            at lære den basale JavaScript, for at gøre Light/Dark mode til at
+            fungere korrekt.
+          </p>
+          <p>
+            Find min løsning her:
+            <a
+              href="https://idda0001.github.io/AI-uprising/index.html"
+              target="blank"
+              >Emergency Site - AI-Uprising</a
+            >
+          </p>
+          <p>
+            Når jeg kigger tilbage nu, ville jeg have lagt mere vægt på selve
+            JavaScript delen.
+          </p>
+        </div>
+        <div class="tema3slide">
+          <div class="slideshow" data-slideshow>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <div class="slide" data-slide>
+              <img
+                src="imgs/placeholder-1024x1024.webp"
+                style="width: 100%"
+                alt="placeholder"
+              />
+            </div>
+            <button type="button" data-prev>❮</button>
+            <button type="button" data-next>❯</button>
+          </div>
+          <img
+            src="svg/hylde.svg"
+            alt="hylde"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="contact">
         <div class="contact1">

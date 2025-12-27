@@ -158,6 +158,9 @@ header {
 .burger:focus-visible {
   outline: none;
 }
+.hide-desktop::after {
+  content: " ";
+}
 
 @media (min-width: 800px) {
   .burger {

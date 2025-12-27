@@ -16,7 +16,7 @@ img {
 }
 
 .cover {
-  padding: 0 10rem 10rem 10rem;
+  padding: 0 1rem 2rem 1rem;
 }
 .skilte1 img,
 .skilte2 img {
@@ -62,6 +62,10 @@ img {
   outline: none;
 }
 @media (min-width: 800px) {
+  .cover {
+    width: 87%;
+    justify-self: center;
+  }
   .om_pic {
     display: block;
     grid-column: 2;

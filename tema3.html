@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="tema.css" />
 
+    <!-- Preload svg -->
+    <link rel="preload" as="image" href="svg/titelplante2.svg" />
+
+    <link rel="prefetch" as="image" href="svg/hylde.svg" />
+    <link rel="prefetch" as="image" href="svg/billedramme.svg" />
+    <link rel="prefetch" as="image" href="imgs/placeholder-1024x1024.webp" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,23 +75,35 @@
     </header>
 
     <main class="tema_main">
-      <h1 class="tema">Grundlæggende UX/UI</h1>
-      <div class="tema1">
-        <div class="tema1tekst">
-          <h2>Hvad jeg har lært under temaet</h2>
-          <p>
-            I tema 03, har jeg lært de grundlæggende ting inden for User
-            Experience og User Interface med fokus på brugeren. Jeg har arbejdet
-            med research og tests for bedre at forstå brugernes behov og brugt
-            Figma til at lave wireframes og prototyper. Jeg har lært, hvordan
-            man udvikler og forbedrer et design gennem feedback og test.
-          </p>
-          <p>
-            Jeg har oplevet hvor vigtigt det er at være omhyggelig og udnytte
-            idéfasen, for såvidt muligt at undvige forhindringer i
-            udførelsesfasen. Opgaver i dette tema har lært mig hvordan man laver
-            løsninger som er nemme at bruge, og skabe en god brugeroplevelse.
-          </p>
+      <div class="overfold">
+        <div class="titelsvg">
+          <h1 class="tema">Grundlæggende UX/UI</h1>
+          <img
+            src="svg/titelplante2.svg"
+            alt="Plante i blå potte"
+            fetchpriority="high"
+            loading="eager"
+          />
+        </div>
+        <div class="tema1">
+          <div class="tema1tekst">
+            <h2>Hvad jeg har lært under temaet</h2>
+            <p>
+              I tema 03, har jeg lært de grundlæggende ting inden for User
+              Experience og User Interface med fokus på brugeren. Jeg har
+              arbejdet med research og tests for bedre at forstå brugernes behov
+              og brugt Figma til at lave wireframes og prototyper. Jeg har lært,
+              hvordan man udvikler og forbedrer et design gennem feedback og
+              test.
+            </p>
+            <p>
+              Jeg har oplevet hvor vigtigt det er at være omhyggelig og udnytte
+              idéfasen, for såvidt muligt at undvige forhindringer i
+              udførelsesfasen. Opgaver i dette tema har lært mig hvordan man
+              laver løsninger som er nemme at bruge, og skabe en god
+              brugeroplevelse.
+            </p>
+          </div>
         </div>
       </div>
       <div class="tema2">
@@ -126,26 +145,27 @@
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <button type="button" data-prev>❮</button>
             <button type="button" data-next>❯</button>
           </div>
+          <img src="svg/hylde.svg" alt="Hylde" />
         </div>
       </div>
       <div class="tema3">
@@ -176,26 +196,27 @@
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <div class="slide" data-slide>
               <img
                 src="imgs/placeholder-1024x1024.webp"
                 style="width: 100%"
-                alt=""
+                alt="placeholder"
               />
             </div>
             <button type="button" data-prev>❮</button>
             <button type="button" data-next>❯</button>
           </div>
+          <img src="svg/hylde.svg" alt="Hylde" />
         </div>
       </div>
     </main>
