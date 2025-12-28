@@ -16,7 +16,14 @@
 .om .om_tekst p {
   margin-bottom: 4rem;
 }
+.om_udsnit h1 {
+  padding: 3rem 0 3rem 0;
+}
 @media (min-width: 800px) {
+  .om_udsnit h1 {
+    padding: 0;
+    padding-bottom: 3rem;
+  }
   .om_pic {
     display: block;
     grid-column: 2;
