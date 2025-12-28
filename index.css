@@ -53,6 +53,7 @@ h2.intro_tekst {
   .cover {
     width: 87%;
     justify-self: center;
+    margin-bottom: 4rem;
   }
   .om_pic {
     display: block;

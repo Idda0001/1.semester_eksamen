@@ -306,13 +306,17 @@ footer {
   grid-column: 1;
   grid-template-rows: 1fr 1fr;
 }
+p.foot_text {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--footer-p-size-mobile);
+}
 
 .contact1 img,
 .contact2 img {
   height: auto;
   width: 4.5rem;
   padding: 0.5rem;
-  padding-right: 20px;
+  padding-left: 20px;
   margin: 0;
 }
 
@@ -337,8 +341,7 @@ footer {
   height: auto;
   width: 6rem;
   padding: 1.5rem;
-  padding-right: 20px;
-  margin: 0;
+  margin-right: 50px;
   justify-self: end;
 }
 
@@ -348,6 +351,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+  }
+  p.foot_text {
+    font-size: var(--footer-p-size);
   }
   .contact {
     display: contents;

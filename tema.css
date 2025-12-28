@@ -9,7 +9,7 @@
 }
 .tema_main a {
   font-weight: var(--font-weight-bold);
-  color: var(--blue);
+  color: var(--medium-blue);
   text-decoration: underline;
 }
 .tema2 p,

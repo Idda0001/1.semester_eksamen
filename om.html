@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
 
-    <title>Document</title>
+    <title>Om - Ida Dam</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="om.css" />
+
+    <!-- Preload svg -->
+    <link rel="preload" as="image" href="imgs/portræt_v2.webp" />
+    <link rel="preload" as="image" href="svg/favicon-cropped.svg" />
+
+    <!-- Prefetch hover -->
+    <link rel="prefetch" as="image" href="svg/Logo_isd-cropped.svg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,20 +26,20 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="svg/favicon-cropped.svg" />
   </head>
-  <body>
+  <body class="om">
     <header>
-      <div class="logo_wrapper">
-        <a href="index.html" class="active"
-          ><img
-            id="logo"
-            class="logo"
-            src="svg/Logo_isd-cropped.svg"
-            alt="Bogstaverne I S D"
-            width="90"
-            height="45"
-        /></a>
-      </div>
+      <a href="index.html" class="active"
+        ><img
+          id="logo"
+          class="logo"
+          src="svg/Logo_isd-cropped.svg"
+          alt="Bogstaverne I S D"
+          width="90"
+          height="45"
+      /></a>
+
       <nav>
         <ul class="menu" id="menu">
           <li><a href="index.html">Forside</a></li>
@@ -66,22 +73,88 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="om_udsnit">
+        <div class="om_tekst">
+          <h1>Personen bag portfolien</h1>
+          <p>
+            Mit navn er Ida og jeg er studerende på Multimediedesign
+            uddannelsen, på Københavns Erhvervsakademi. På mit 1. semester har
+            jeg arbejdet med både kreative og digitale opgaver. Jeg har altid
+            haft interesse for det kreative og digitale, og uddannelsen har
+            givet mig mulighed for at blande de to.
+          </p>
+          <p>
+            Jeg har i løbet af semesteret arbejdet både med grafisk design,
+            UX/UI, webdesign, indholdsproduktion og sprogene HTML, CSS og
+            JavaScript. Jeg har lært hvordan en designprocess forløber sig, helt
+            fra idéfasen til det færdige produkt.
+          </p>
+          <p>
+            Semesteret har lært mig hvor vigtigt det er at forstå brugeren og
+            tænke over processen, før man går i gang med at designe og kode. Jeg
+            har også fået en bedre forståelse for, at processen bag et projekt
+            er lige så vigtig som det færdige resultat, hvilket også er en
+            erfaring jeg tager med videre i uddannelsen.
+          </p>
+          <p>
+            Derudover har det givet mig et godt fagligt startpunkt og lært mig
+            mere om mine egne styrker, især indenfor det kreative og visuelle
+            arbejde.
+          </p>
+          <p>
+            Jeg har endnu ikke erhvervserfaring inden for multimediedesign, men
+            jeg har gennem mit studie opnået praktisk erfaring med design- og
+            udviklingsprojekter, som har givet mig et godt udgangspunkt.
+          </p>
+        </div>
+        <div class="om_pic">
+          <img
+            src="imgs/portræt_v2.webp"
+            class="ombilled"
+            src="imgs/portræt_v2.webp"
+            alt="placeholder"
+            width="400"
+            height="400"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="contact">
         <div class="contact1">
-          <img class="img_foot" src="svg/insta_logo.svg" alt="Instagram Logo" />
-          <h3 class="foot_text">Idasdam</h3>
+          <img
+            class="img_foot"
+            src="svg/insta_logo.svg"
+            alt="Instagram Logo"
+            width="90"
+            height="45"
+          />
+          <p class="foot_text">Idasdam</p>
         </div>
         <div class="contact2">
-          <img class="img_foot" src="svg/mail_logo.svg" alt="Mail Logo" />
-          <div class="contact2tekst">
-            <h3 class="foot_text">idda0001@stud.ek.dk</h3>
-          </div>
+          <img
+            class="img_foot"
+            src="svg/mail_logo.svg"
+            alt="Mail Logo"
+            width="90"
+            height="45"
+          />
+
+          <p class="foot_text">idda0001@stud.ek.dk</p>
         </div>
       </div>
       <div class="footer_logo">
-        <img src="svg/Logo_isd-cropped.svg" alt="Logo" />
+        <img
+          src="svg/Logo_isd-cropped.svg"
+          id="logo"
+          class="logo"
+          src="svg/Logo_isd-cropped.svg"
+          alt="Bogstaverne I S D"
+          width="90"
+          height="45"
+        />
       </div>
     </footer>
   </body>

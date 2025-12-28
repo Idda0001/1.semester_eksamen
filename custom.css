@@ -14,6 +14,7 @@
   --button-border: #805e45;
   --button-hover-background: #805e45;
   --button-hover-text: #fdfdff;
+  --medium-blue: #5171b6;
 
   /*fonts*/
   --h1-font: "Rubik Mono One", monospace;
@@ -35,9 +36,9 @@
   --nav-size: clamp(1.2rem, 1.5vw, 3rem);
   --nav-gap: clamp(1rem, 1.5vw, 5rem);
 
-  /*H3*/
-  --h3-size: clamp(1rem, 1.8vw, 5rem);
-  --h3-size-mobile: 0.8rem;
+  /*Footer p*/
+  --footer-p-size: clamp(1rem, 1.8vw, 5rem);
+  --footer-p-size-mobile: 0.8rem;
 
   /* P */
   --text-size: clamp(1rem, 1.5vw, 3rem);

@@ -1,0 +1,39 @@
+.om_pic {
+  width: 75%;
+  justify-self: center;
+  border-radius: 15px;
+  background-image: url(svg/træ_baggrund.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ombilled {
+  padding: 2rem;
+}
+.om_tekst h2 {
+  margin-top: 7rem;
+}
+.om .om_tekst p {
+  margin-bottom: 4rem;
+}
+@media (min-width: 800px) {
+  .om_pic {
+    display: block;
+    grid-column: 2;
+    width: var(--img-width);
+    justify-self: right;
+    align-self: center;
+  }
+
+  .om_udsnit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+  .om_tekst {
+    grid-column: 1;
+    align-content: center;
+    align-self: center;
+  }
+}
