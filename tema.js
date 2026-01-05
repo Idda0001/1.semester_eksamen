@@ -1,27 +1,20 @@
 document.querySelectorAll("[data-slideshow]").forEach((slideshowEl) => {
   const slides = slideshowEl.querySelectorAll("[data-slide]");
+  const nextBtn = slideshowEl.querySelector("[data-next]");
+  const prevBtn = slideshowEl.querySelector("[data-prev]");
+
+  if (!slides.length) return;
+
   let index = 0;
 
   function show(i) {
-    // wrap-around
-    if (i >= slides.length) index = 0;
-    if (i < 0) index = slides.length - 1;
-
+    index = (i + slides.length) % slides.length; // wrap-around
     slides.forEach((s) => s.classList.remove("is-active"));
     slides[index].classList.add("is-active");
   }
 
-  // initial
-  show(index);
+  show(0);
 
-  // knapper
-  slideshowEl.querySelector("[data-next]").addEventListener("click", () => {
-    index += 1;
-    show(index);
-  });
-
-  slideshowEl.querySelector("[data-prev]").addEventListener("click", () => {
-    index -= 1;
-    show(index);
-  });
+  nextBtn?.addEventListener("click", () => show(index + 1));
+  prevBtn?.addEventListener("click", () => show(index - 1));
 });
