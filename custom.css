@@ -46,7 +46,7 @@
   --text-size-mobile: 1.4rem;
 
   --button-padding: clamp(1rem, 1vw, 3rem);
-  --img-width: 75%;
+  --img-width: 100%;
 }
 /*animation*/
 @keyframes swing {
