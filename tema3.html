@@ -14,11 +14,6 @@
 
     <!-- Preload svg -->
     <link rel="preload" as="image" href="svg/titelplante2.svg" />
-    <link rel="preload" as="image" href="svg/favicon-cropped.svg" />
-
-    <link rel="prefetch" as="image" href="svg/hylde.svg" />
-    <link rel="prefetch" as="image" href="svg/billedramme.svg" />
-    <link rel="prefetch" as="image" href="imgs/placeholder-1024x1024.webp" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,21 +22,26 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="svg/favicon-cropped.svg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="svg/favicon-cropped.svg" type="image/svg+xml" />
   </head>
+
   <body>
     <header>
       <div class="logo_wrapper">
-        <a href="index.html" class="active"
-          ><img
+        <a href="index.html" class="active">
+          <img
             id="logo"
             class="logo"
             src="svg/Logo_isd-cropped.svg"
             alt="Bogstaverne I S D"
             width="90"
             height="45"
-        /></a>
+          />
+        </a>
       </div>
+
       <nav>
         <ul class="menu" id="menu">
           <li><a href="index.html">Forside</a></li>
@@ -63,11 +63,13 @@
           </li>
           <li><a href="om.html">Om mig</a></li>
         </ul>
+
         <button
           class="burger"
           aria-label="Åben menu"
           aria-expanded="false"
           aria-controls="menu"
+          type="button"
         >
           <span class="line"></span>
           <span class="line"></span>
@@ -94,7 +96,7 @@
         <div class="tema1tekst">
           <h2>Hvad jeg har lært under temaet</h2>
           <p>
-            I tema 03, har jeg lært de grundlæggende ting inden for User
+            I tema 03 har jeg lært de grundlæggende ting inden for User
             Experience og User Interface med fokus på brugeren. Jeg har arbejdet
             med research og tests for bedre at forstå brugernes behov og brugt
             Figma til at lave wireframes og prototyper. Jeg har lært, hvordan
@@ -102,12 +104,13 @@
           </p>
           <p>
             Jeg har oplevet hvor vigtigt det er at være omhyggelig og udnytte
-            idéfasen, for såvidt muligt at undvige forhindringer i
+            idéfasen, for så vidt muligt at undgå forhindringer i
             udførelsesfasen. Opgaver i dette tema har lært mig hvordan man laver
-            løsninger som er nemme at bruge, og skabe en god brugeroplevelse.
+            løsninger som er nemme at bruge og skaber en god brugeroplevelse.
           </p>
         </div>
       </section>
+
       <section class="tema2">
         <div class="tema2tekst">
           <h2>Min arbejdsproces</h2>
@@ -137,42 +140,52 @@
             <a
               href="https://www.figma.com/design/jsy5znlYDWUm7W6h6TANu3/Prototype-Desktop?node-id=104-162&p=f&t=Ye1f12a86dbR5so0-0"
               target="_blank"
+              rel="noopener noreferrer"
               >figma-fil</a
-            >
+            >.
           </p>
         </div>
+
         <div class="tema2slide">
           <div class="slideshow" data-slideshow>
             <div class="slide" data-slide>
               <img
-                src="imgs/wireframe_savile 1.webp"
-                alt="Wireframe lavet i figma"
+                src="imgs/wireframe_savile_1.webp"
+                alt="Wireframe lavet i Figma"
                 loading="lazy"
                 width="400"
                 height="400"
               />
             </div>
+
             <div class="slide" data-slide>
               <img
-                src="imgs/savile_mood 1.webp"
-                alt="Moodboard lavet i figma"
+                src="imgs/savile_mood_1.webp"
+                alt="Moodboard lavet i Figma"
                 loading="lazy"
                 width="400"
                 height="400"
               />
             </div>
+
             <div class="slide" data-slide>
               <img
-                src="imgs/savile_klik 1.webp"
-                alt="Klikbar prototype lavet i figma"
+                src="imgs/savile_klik_1.webp"
+                alt="Klikbar prototype lavet i Figma"
                 loading="lazy"
                 width="400"
                 height="400"
               />
             </div>
-            <button type="button" data-prev>❮</button>
-            <button type="button" data-next>❯</button>
+
+            <button type="button" data-prev aria-label="Forrige billede">
+              ❮
+            </button>
+            <button type="button" data-next aria-label="Næste billede">
+              ❯
+            </button>
           </div>
+
           <img
             src="svg/hylde.svg"
             alt="Hylde"
@@ -183,6 +196,7 @@
           />
         </div>
       </section>
+
       <section class="tema3">
         <div class="tema3tekst">
           <h2>Det endelige resultat</h2>
@@ -193,7 +207,10 @@
           </p>
           <p>
             Find min løsning her:
-            <a href="https://idda0001.github.io/emne_site/" target="_blank"
+            <a
+              href="https://idda0001.github.io/emne_site/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Savile Shopping</a
             >
           </p>
@@ -204,10 +221,11 @@
             ud på natten.
           </p>
         </div>
+
         <div class="solut">
           <div class="solut_img">
             <img
-              src="imgs/savile_forside 1.webp"
+              src="imgs/savile_forside_1.webp"
               alt="Forside af Savile Shopping"
               loading="lazy"
               width="400"
@@ -226,6 +244,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="contact">
         <div class="contact1">
@@ -238,6 +257,7 @@
           />
           <p class="foot_text">Idasdam</p>
         </div>
+
         <div class="contact2">
           <img
             class="img_foot"
@@ -246,24 +266,24 @@
             width="90"
             height="45"
           />
-
           <p class="foot_text">idda0001@stud.ek.dk</p>
         </div>
       </div>
+
       <div class="footer_logo">
         <img
           src="svg/Logo_isd-cropped.svg"
-          id="logo"
+          id="footer_logo"
           class="logo"
-          src="svg/Logo_isd-cropped.svg"
           alt="Bogstaverne I S D"
           width="90"
           height="45"
         />
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="menu.js" defer></script>
+    <script src="tema.js" defer></script>
   </body>
-  <!-- JS -->
-  <script src="menu.js" defer></script>
-  <script src="tema.js" defer></script>
 </html>

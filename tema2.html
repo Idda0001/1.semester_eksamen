@@ -14,11 +14,6 @@
 
     <!-- Preload svg -->
     <link rel="preload" as="image" href="svg/titelplante.svg" />
-    <link rel="preload" as="image" href="svg/favicon-cropped.svg" />
-
-    <link rel="prefetch" as="image" href="svg/hylde.svg" />
-    <link rel="prefetch" as="image" href="svg/billedramme.svg" />
-    <link rel="prefetch" as="image" href="imgs/placeholder-1024x1024.webp" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="svg/favicon-cropped.svg" />
+    <link rel="icon" href="svg/favicon-cropped.svg" type="image/svg+xml" />
   </head>
   <body>
     <header>
@@ -116,7 +111,7 @@
             arbejdet med opbygning af siden og placering af indholdet.
           </p>
         </div>
-        <section class="tema2slide">
+        <div class="tema2slide">
           <div class="slideshow" data-slideshow>
             <div class="slide" data-slide>
               <img
@@ -129,7 +124,7 @@
             </div>
             <div class="slide" data-slide>
               <img
-                src="imgs/mobilsite_screen 1.webp"
+                src="imgs/mobilsite_screen_1.webp"
                 alt="HTML kode for mobilsite"
                 loading="lazy"
                 width="400"
@@ -138,25 +133,29 @@
             </div>
             <div class="slide" data-slide>
               <img
-                src="imgs/mobilsite_css 2.webp"
+                src="imgs/mobilsite_css_2.webp"
                 alt="CSS kode for mobilsite"
                 loading="lazy"
                 width="400"
                 height="400"
               />
             </div>
-            <button type="button" data-prev>❮</button>
-            <button type="button" data-next>❯</button>
+            <button type="button" data-prev aria-label="Forrige billede">
+              ❮
+            </button>
+            <button type="button" data-next aria-label="Næste billede">
+              ❯
+            </button>
           </div>
           <img
             src="svg/hylde.svg"
-            alt="Hylde"
+            alt="hylde"
             loading="lazy"
             decoding="async"
             width="362"
             height="80"
           />
-        </section>
+        </div>
       </section>
       <section class="tema3">
         <div class="tema3tekst">
@@ -168,7 +167,10 @@
           </p>
           <p>
             Find min løsning her:
-            <a href="https://idda0001.github.io/website_v1/" target="blank"
+            <a
+              href="https://idda0001.github.io/website_v1/"
+              target="_blank"
+              rel="noopener noreferrer"
               >Om Computere</a
             >
           </p>
@@ -183,7 +185,7 @@
         <div class="solut">
           <div class="solut_img">
             <img
-              src="imgs/loesning_t2 2.png"
+              src="imgs/loesning_t2_2.png"
               alt="Computer site forside"
               loading="lazy"
               width="400"
@@ -228,17 +230,16 @@
       <div class="footer_logo">
         <img
           src="svg/Logo_isd-cropped.svg"
-          id="logo"
+          id="footer_logo"
           class="logo"
-          src="svg/Logo_isd-cropped.svg"
           alt="Bogstaverne I S D"
           width="90"
           height="45"
         />
       </div>
     </footer>
+    <!-- JS -->
+    <script src="menu.js" defer></script>
+    <script src="tema.js" defer></script>
   </body>
-  <!-- JS -->
-  <script src="menu.js" defer></script>
-  <script src="tema.js" defer></script>
 </html>

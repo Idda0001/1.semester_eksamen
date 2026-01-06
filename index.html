@@ -14,10 +14,6 @@
 
     <!-- Preload svg -->
     <link rel="preload" as="image" href="svg/Portfolio_svg_cover.svg" />
-    <link rel="preload" as="image" href="svg/favicon-cropped.svg" />
-
-    <!-- Prefetch hover -->
-    <link rel="prefetch" as="image" href="svg/Logo_isd-cropped.svg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="svg/favicon-cropped.svg" />
+    <link rel="icon" href="svg/favicon-cropped.svg" type="image/svg+xml" />
   </head>
   <body class="index">
     <header>
@@ -90,7 +86,7 @@
         skiltene!
       </h2>
 
-      <section class="skilte_all">
+      <div class="skilte_all">
         <div class="skilte1">
           <a href="tema2.html"
             ><img
@@ -135,7 +131,7 @@
               decoding="async"
           /></a>
         </div>
-      </section>
+      </div>
 
       <section class="om_udsnit">
         <div class="om_tekst">
@@ -188,16 +184,15 @@
       <div class="footer_logo">
         <img
           src="svg/Logo_isd-cropped.svg"
-          id="logo"
+          id="footer_logo"
           class="logo"
-          src="svg/Logo_isd-cropped.svg"
           alt="Bogstaverne I S D"
           width="90"
           height="45"
         />
       </div>
     </footer>
+    <!-- JS -->
+    <script src="menu.js" defer></script>
   </body>
-  <!-- JS -->
-  <script src="menu.js" defer></script>
 </html>
