@@ -39,8 +39,6 @@ h2.intro_tekst {
 }
 .om_udsnit a:hover {
   background-color: var(--button-hover-background);
-  color: var(--button-hover-text);
-  border-color: var(--button-border);
   transition: 0.05s linear;
   animation: swing 1s;
 }
